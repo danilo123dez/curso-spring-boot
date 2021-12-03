@@ -1,0 +1,12 @@
+version: '2.2'
+services:
+
+  database:
+    image: mysql:8.0.22
+    environment:
+      MYSQL_ROOT_PASSWORD: 123456
+      MYSQL_USER: docker
+      MYSQL_PASSWORD: docker123
+      MYSQL_DATABASE: gvendas_db
+    expose:
+      - 3306
